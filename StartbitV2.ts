@@ -41,7 +41,15 @@ namespace StartbitV2 {
         //% block="Port 1"
         port1 = 0x01,
         //% block="Port 2"
-        port2 = 0x02
+        port2 = 0x02,
+        //% block="Port 3"
+        port3 = 0x03,
+        //% block="Port 4"
+        port4 = 0x04,
+        //% block="Port 5"
+        port5 = 0x05,
+        //% block="Port 6"
+        port6 = 0x06
     }
 	
     let echoPin: DigitalPin;
@@ -57,6 +65,10 @@ namespace StartbitV2 {
                 echoPin = DigitalPin.P14;
                 trigPin = DigitalPin.P13;
                 break;
+            default:
+                echoPin = DigitalPin.P2;
+                trigPin = DigitalPin.P1;
+                break;
         }
     }
 	
@@ -64,7 +76,15 @@ namespace StartbitV2 {
         //% block="Port 1"
         port1 = 0x01,
         //% block="Port 2"
-        port2 = 0x02
+        port2 = 0x02,
+        //% block="Port 3"
+        port3 = 0x03,
+        //% block="Port 4"
+        port4 = 0x04,
+        //% block="Port 5"
+        port5 = 0x05,
+        //% block="Port 6"
+        port6 = 0x06
     }
 
     let touchSensorPin: DigitalPin;
@@ -77,12 +97,25 @@ namespace StartbitV2 {
             case startbit_touchKeyPort.port2:
                 touchSensorPin = DigitalPin.P13;
                 break;
+            default:
+                touchSensorPin = DigitalPin.P1;
+                break;
         }
     }
 	    
     export enum startbit_lineFollowPort {
         //% block="Port 1"
-        port1 = 0x01
+        port1 = 0x01,
+        //% block="Port 2"
+        port2 = 0x02,
+        //% block="Port 3"
+        port3 = 0x03,
+        //% block="Port 4"
+        port4 = 0x04,
+        //% block="Port 5"
+        port5 = 0x05,
+        //% block="Port 6"
+        port6 = 0x06
     }
 
     let lineFollowPin1: AnalogPin;
@@ -93,6 +126,10 @@ namespace StartbitV2 {
             case startbit_lineFollowPort.port1:
                 lineFollowPin1 = AnalogPin.P1;
 		lineFollowPin2 = AnalogPin.P2;
+                break;
+            default:
+                lineFollowPin1 = AnalogPin.P1;
+                lineFollowPin2 = AnalogPin.P2;
                 break;
         }
     }
@@ -118,7 +155,17 @@ namespace StartbitV2 {
 
     export enum startbit_knobPort {
         //% block="Port 1"
-        port1 = 0x01
+        port1 = 0x01,
+        //% block="Port 2"
+        port2 = 0x02,
+        //% block="Port 3"
+        port3 = 0x03,
+        //% block="Port 4"
+        port4 = 0x04,
+        //% block="Port 5"
+        port5 = 0x05,
+        //% block="Port 6"
+        port6 = 0x06
     }
 
     let knobPin: AnalogPin;
@@ -128,17 +175,40 @@ namespace StartbitV2 {
             case startbit_knobPort.port1:
                 knobPin = AnalogPin.P1;
                 break;
+            default:
+                knobPin = AnalogPin.P1;
+                break;
         }	
     }
 	    
     export enum startbit_photosensitivePort {
         //% block="Port 1"
-        port1 = 0x01	    
+        port1 = 0x01,
+        //% block="Port 2"
+        port2 = 0x02,
+        //% block="Port 3"
+        port3 = 0x03,
+        //% block="Port 4"
+        port4 = 0x04,
+        //% block="Port 5"
+        port5 = 0x05,
+        //% block="Port 6"
+        port6 = 0x06	    
     }
 	
     export enum startbit_PhotosensitiveSensor {
         //% block="Port 1"
-        port1 = 0x00	    
+        port1 = 0x00,
+        //% block="Port 2"
+        port2 = 0x01,
+        //% block="Port 3"
+        port3 = 0x02,
+        //% block="Port 4"
+        port4 = 0x03,
+        //% block="Port 5"
+        port5 = 0x04,
+        //% block="Port 6"
+        port6 = 0x05	    
     }
 
     let photosensitiveSensorPin1: AnalogPin;
@@ -150,14 +220,26 @@ namespace StartbitV2 {
                 photosensitiveSensorPin1 = AnalogPin.P1;
 		photosensitiveSensorPin2 = DigitalPin.P2;
                 break;
+            default:
+                photosensitiveSensorPin1 = AnalogPin.P1;
+                photosensitiveSensorPin2 = DigitalPin.P2;
+                break;
         }
     }
 	
     export enum startbit_fanPort {
         //% block="Port 1"
-        port1,
+        port1 = 0,
         //% block="Port 2"
-        port2
+        port2 = 1,
+        //% block="Port 3"
+        port3 = 2,
+        //% block="Port 4"
+        port4 = 3,
+        //% block="Port 5"
+        port5 = 4,
+        //% block="Port 6"
+        port6 = 5
     }
 		
     let fanPin1: AnalogPin;
@@ -172,6 +254,10 @@ namespace StartbitV2 {
             case startbit_fanPort.port2:
                 fanPin1 = AnalogPin.P13;
 		fanPin2 = AnalogPin.P14;	
+                break;
+            default:
+                fanPin1 = AnalogPin.P1;
+                fanPin2 = AnalogPin.P2;
                 break;
         }	  
     }
@@ -248,7 +334,15 @@ namespace StartbitV2 {
         //% block="Port 1"
         port1 = 0x01,
         //% block="Port 2"
-        port2 = 0x02
+        port2 = 0x02,
+        //% block="Port 3"
+        port3 = 0x03,
+        //% block="Port 4"
+        port4 = 0x04,
+        //% block="Port 5"
+        port5 = 0x05,
+        //% block="Port 6"
+        port6 = 0x06
     }
 	
     export enum startbit_CmdType {
@@ -914,6 +1008,10 @@ namespace StartbitV2 {
                 digitaltube.clk = DigitalPin.P14;
                 digitaltube.dio = DigitalPin.P13;
                 break;
+            default:
+                digitaltube.clk = DigitalPin.P2;
+                digitaltube.dio = DigitalPin.P1;
+                break;
         }
 
         if ((count < 1) || (count > 5)) count = 4;
@@ -1539,6 +1637,11 @@ namespace StartbitV2 {
             case startbit_ultrasonicPort.port2:
                 if (!lhRGBLightBelt) {
                     lhRGBLightBelt = StartbitRGBLight.create(DigitalPin.P13, 15, StartbitRGBPixelMode.RGB);
+                }
+                break;
+            default:
+                if (!lhRGBLightBelt) {
+                    lhRGBLightBelt = StartbitRGBLight.create(DigitalPin.P1, 15, StartbitRGBPixelMode.RGB);
                 }
                 break;
         }
