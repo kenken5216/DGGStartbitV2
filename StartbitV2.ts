@@ -1499,9 +1499,11 @@ namespace StartbitV2 {
     /**
      * Get the distance of ultrasonic detection to the obstacle 
      */
-    //% weight=90 blockId=startbit_ultrasonic  block="Ultrasonic|distance(cm)"
+    //% weight=90 blockId=startbit_ultrasonic  block="Ultrasonic|distance(cm)|port %port"
     //% subcategory=Sensor
-    export function startbit_ultrasonic(): number {
+    export function startbit_ultrasonic(port: startbit_ultrasonicPort): number {
+        // Initialize pin mapping based on chosen Startbit port.
+        ultrasonic_init(port);
         pins.setPull(echoPin, PinPullMode.PullNone);
         pins.setPull(trigPin, PinPullMode.PullNone);
 

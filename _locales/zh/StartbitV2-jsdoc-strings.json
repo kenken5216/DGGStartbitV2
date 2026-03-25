@@ -43,7 +43,7 @@
 	"StartbitV2.startbit_readLineFollowerStatus":"获得巡线传感器状态",
 	"StartbitV2.startbit_line_followers":"判断巡线传感器的状态",
 	"StartbitV2.startbit_touchButton":"检测触摸按键是否有按下，有按下返回1，没有按下返回0",
-	"StartbitV2.startbit_ultrasonic":"获得超声波模块测试到的障碍物的距离",
+	"StartbitV2.startbit_ultrasonic":"获得超声波模块测试到的障碍物的距离（选择端口）",
 	"StartbitV2.startbit_getKnobValue":"获取旋钮的ad值",
 	"StartbitV2.startbit_lineSensorValue":"获取巡线传感器的ad值",
 	
