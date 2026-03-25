@@ -1,4 +1,4 @@
-# StartbitV2
+# DGGStartbitV2
 
  The block for microbit v2
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-StartbitV2=github:Hiwonder/StartbitV2
+DGGStartbitV2=github:kenken5216/DGGStartbitV2
 ```
