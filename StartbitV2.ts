@@ -220,6 +220,26 @@ namespace StartbitV2 {
                 photosensitiveSensorPin1 = AnalogPin.P1;
 		photosensitiveSensorPin2 = DigitalPin.P2;
                 break;
+            case startbit_PhotosensitiveSensor.port2:
+                photosensitiveSensorPin1 = AnalogPin.P13;
+                photosensitiveSensorPin2 = DigitalPin.P14;
+                break;
+            case startbit_PhotosensitiveSensor.port3:
+                photosensitiveSensorPin1 = AnalogPin.P15;
+                photosensitiveSensorPin2 = DigitalPin.P16;
+                break;
+            case startbit_PhotosensitiveSensor.port4:
+                photosensitiveSensorPin1 = AnalogPin.P3;
+                photosensitiveSensorPin2 = DigitalPin.P4;
+                break;
+            case startbit_PhotosensitiveSensor.port5:
+                photosensitiveSensorPin1 = AnalogPin.P10;
+                photosensitiveSensorPin2 = DigitalPin.P11;
+                break;
+            case startbit_PhotosensitiveSensor.port6:
+                photosensitiveSensorPin1 = AnalogPin.P0;
+                photosensitiveSensorPin2 = DigitalPin.P8;
+                break;
             default:
                 photosensitiveSensorPin1 = AnalogPin.P1;
                 photosensitiveSensorPin2 = DigitalPin.P2;
