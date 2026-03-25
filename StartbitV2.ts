@@ -1538,9 +1538,10 @@ namespace StartbitV2 {
     /**
     * Get the ad value of the photosensitive moudule
     */
-    //% weight=91 blockId=startbit_getphotosensitiveValue  block="Get Photosensitive|value(0~255)"
+    //% weight=91 blockId=startbit_getphotosensitiveValue  block="Get Photosensitive|value(0~255)|port %port"
     //% subcategory=Sensor
-    export function startbit_getphotosensitiveValue(): number {
+    export function startbit_getphotosensitiveValue(port: startbit_PhotosensitiveSensor): number {
+        photosensitiveSensor_init(port);
         let adValue = pins.analogReadPin(photosensitiveSensorPin1);
         adValue = adValue * 255 / 1023;
         return 255 - adValue;
@@ -1549,9 +1550,10 @@ namespace StartbitV2 {
     /**
     * Get the Photosensitive sensor status,1 detect bright,0 no detect bright
     */
-    //% weight=98 blockId=startbit_photosensitiveSensor block="Photosensitive sensor|detect bright"
+    //% weight=98 blockId=startbit_photosensitiveSensor block="Photosensitive sensor|detect bright|port %port"
     //% subcategory=Sensor
-    export function startbit_photosensitiveSensor(): boolean {
+    export function startbit_photosensitiveSensor(port: startbit_PhotosensitiveSensor): boolean {
+        photosensitiveSensor_init(port);
         let status = 0;
         let flag: boolean = false;
 

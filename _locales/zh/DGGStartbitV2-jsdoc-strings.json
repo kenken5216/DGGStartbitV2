@@ -58,8 +58,8 @@
 	"StartbitV2.startbit_stopActionGroup":"让舵机控制板停止当前运行的动作组",
 	"StartbitV2.startbit_sendAttitude":"向舵机控制板发送Microbit的姿态",
 	
-	"StartbitV2.startbit_getphotosensitiveValue":"获取光敏传感器的ad值",
-	"StartbitV2.startbit_photosensitiveSensor":"获得光敏传感器的状态，返回1表示检测到光亮，返回0表示没有检测到光亮",
+	"StartbitV2.startbit_getphotosensitiveValue":"获取光敏传感器的ad值（选择端口）",
+	"StartbitV2.startbit_photosensitiveSensor":"获得光敏传感器的状态（选择端口），返回1表示检测到光亮，返回0表示没有检测到光亮",
 	
 	"StartbitV2.startbit_digitaltube":"设置数码管接口, 显示亮度以及显示位数(1-4)",
 	"StartbitV2.startbit_showNumber":"显示一个整数, 可以是负数",
