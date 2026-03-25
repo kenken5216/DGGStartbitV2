@@ -187,7 +187,7 @@
 	"StartbitV2.setPwmServo|block":"设置PWM舵机|转动范围 %range|编号 %index|角度 %angle|时长 %duration",
 	"StartbitV2.setArrayServo|block":"设置PWM舵机|转动范围 %range|编号(数组类型) %index|角度(数组类型) %angle|时长 %duration",
 	"StartbitV2.setBusServo|block":"设置总线舵机|ID %index|角度 %angle|时长 %duration",
-	"StartbitV2.setLogoServo|block": "设置乐高360°舵机ID %index 速度 %speed",
+	"StartbitV2.setLogoServo|block":"设置乐高360°舵机ID %index 速度 %speed",
 	"StartbitV2.startbit_runActionGroup|block":"运行动作组|编号 %index|次数 %times",
 	"StartbitV2.startbit_stopActionGroup|block":"停止当前动作组",
 	"StartbitV2.startbit_sendAttitude|block":"发送姿态 旋转|%pitch| 横滚|%roll",

@@ -12,8 +12,8 @@
         "StartbitV2.ts",
         "StartbitRGBLight.ts",
         "sendbuffer.asm",
-        "_locales/zh/StartbitV2-strings.json",
-        "_locales/zh/StartbitV2-jsdoc-strings.json"
+        "_locales/zh/DGGStartbitV2-strings.json",
+        "_locales/zh/DGGStartbitV2-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
