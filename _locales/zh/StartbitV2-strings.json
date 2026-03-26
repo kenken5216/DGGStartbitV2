@@ -126,7 +126,7 @@
 	"StartbitV2.startbit_ultrasonicPort.port6|block":"接口6",
 	"StartbitV2.startbit_init_colorSensor|block":"初始化颜色传感器 %port",
 	"StartbitV2.startbit_checkCurrentColor|block":"检测到颜色 %color",
-	"StartbitV2.startbit_avoidSensor|block":"避障传感器检测到障碍物",
+	"StartbitV2.startbit_avoidSensor|block":"避障传感器检测到障碍物|port %port",
 	"StartbitV2.startbit_fan_speed|block":"设置风扇|速度 %speed",
 	"StartbitV2.startbit_readLineFollowerStatus|block":"巡线传感器|%status",
 	"StartbitV2.startbit_ultrasonic|block":"超音波模組測試到障礙物距離(Cm)|port %port",

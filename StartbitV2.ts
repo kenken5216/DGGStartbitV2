@@ -1439,9 +1439,10 @@ namespace StartbitV2 {
     /**
     * Get the obstacle avoidance sensor status,1 detect obstacle,0 no detect obstacle
     */
-    //% weight=97 blockId=startbit_avoidSensor block="Obstacle avoidance sensor|detect obstacle"
+    //% weight=97 blockId=startbit_avoidSensor block="Obstacle avoidance sensor|detect obstacle|port %port"
     //% subcategory=Sensor
-    export function startbit_avoidSensor(): boolean {
+    export function startbit_avoidSensor(port: startbit_touchKeyPort): boolean {
+        avoidSensor_init(port);
         let status = 0;
         let flag: boolean = false;
 

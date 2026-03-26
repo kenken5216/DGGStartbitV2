@@ -39,7 +39,7 @@
 	"StartbitV2.startbit_convertBattery":"转换电压值，发送到手机端，APP会显示当前电压",
 	
 	"StartbitV2.startbit_checkCurrentColor":"可以获得颜色传感器检测到颜色",
-	"StartbitV2.startbit_avoidSensor":"获得避障传感器状态，从而知道前方有没有障碍物,返回1遇到障碍物，返回0没有遇到障碍物",
+	"StartbitV2.startbit_avoidSensor":"获得避障传感器状态（选择端口），从而知道前方有没有障碍物,返回1遇到障碍物，返回0没有遇到障碍物",
 	"StartbitV2.startbit_readLineFollowerStatus":"获得巡线传感器状态",
 	"StartbitV2.startbit_line_followers":"判断巡线传感器的状态",
 	"StartbitV2.startbit_touchButton":"检测触摸按键是否有按下，有按下返回1，没有按下返回0",
