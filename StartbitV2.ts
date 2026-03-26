@@ -1028,6 +1028,22 @@ namespace StartbitV2 {
                 digitaltube.clk = DigitalPin.P14;
                 digitaltube.dio = DigitalPin.P13;
                 break;
+            case startbit_digitaltubePort.port3:
+                digitaltube.clk = DigitalPin.P16;
+                digitaltube.dio = DigitalPin.P15;
+                break;
+            case startbit_digitaltubePort.port4:
+                digitaltube.clk = DigitalPin.P4;
+                digitaltube.dio = DigitalPin.P3;
+                break;
+            case startbit_digitaltubePort.port5:
+                digitaltube.clk = DigitalPin.P11;
+                digitaltube.dio = DigitalPin.P10;
+                break;
+            case startbit_digitaltubePort.port6:
+                digitaltube.clk = DigitalPin.P8;
+                digitaltube.dio = DigitalPin.P0;
+                break;
             default:
                 digitaltube.clk = DigitalPin.P2;
                 digitaltube.dio = DigitalPin.P1;
