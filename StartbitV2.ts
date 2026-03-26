@@ -183,17 +183,7 @@ namespace StartbitV2 {
 	    
     export enum startbit_photosensitivePort {
         //% block="Port 1"
-        port1 = 0x01,
-        //% block="Port 2"
-        port2 = 0x02,
-        //% block="Port 3"
-        port3 = 0x03,
-        //% block="Port 4"
-        port4 = 0x04,
-        //% block="Port 5"
-        port5 = 0x05,
-        //% block="Port 6"
-        port6 = 0x06	    
+        port1 = 0x01
     }
 	
     export enum startbit_PhotosensitiveSensor {
@@ -1576,9 +1566,14 @@ namespace StartbitV2 {
     */
     //% weight=91 blockId=startbit_getphotosensitiveValue  block="Get Photosensitive|value(0~255)|port %port"
     //% subcategory=Sensor
-    export function startbit_getphotosensitiveValue(port: startbit_PhotosensitiveSensor): number {
-        photosensitiveSensor_init(port);
-        let adValue = pins.analogReadPin(photosensitiveSensorPin1);
+    export function startbit_getphotosensitiveValue(port: startbit_photosensitivePort): number {
+        let adPin = AnalogPin.P1;
+        switch (port) {
+            case startbit_photosensitivePort.port1:
+                adPin = AnalogPin.P1;
+                break;
+        }
+        let adValue = pins.analogReadPin(adPin);
         adValue = adValue * 255 / 1023;
         return 255 - adValue;
     }
